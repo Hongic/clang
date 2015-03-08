@@ -1,0 +1,315 @@
+[ 2013-12-14T22:29:17+08:00 ] 127.0.0.1 /clang/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.046713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.046873s ]
+NOTIC: [2048] Non-static method CommonAction::footer() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\IndexAction.class.php 第 7 行.
+NOTIC: [2048] Non-static method CommonAction::copyRight() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `clang_about` [ RunTime:0.053603s ]
+SQL: SELECT * FROM `clang_about` WHERE ( `type` = '版权信息' ) ORDER BY id desc LIMIT 1   [ RunTime:0.001024s ]
+NOTIC: [2048] Non-static method CommonAction::youlink() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `clang_link` [ RunTime:0.037895s ]
+SQL: SELECT * FROM `clang_link` ORDER BY rank asc LIMIT 0,6   [ RunTime:0.000525s ]
+NOTIC: [2048] Non-static method CommonAction::jieshao() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 16 行.
+SQL: SELECT `content` FROM `clang_about` WHERE ( `type` = '关于我们' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `clang_practice` [ RunTime:0.037499s ]
+SQL: SELECT `id`,`title`,`time` FROM `clang_practice` WHERE ( `type` = '学生设计' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `clang_news` [ RunTime:0.039884s ]
+SQL: SELECT `id`,`title`,`time` FROM `clang_news` ORDER BY id desc LIMIT 0,10   [ RunTime:0.000444s ]
+SQL: SHOW COLUMNS FROM `clang_notice` [ RunTime:0.047913s ]
+SQL: SELECT `content` FROM `clang_notice` WHERE ( `type` = '最新公告' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000421s ]
+SQL: SHOW COLUMNS FROM `clang_results` [ RunTime:0.026184s ]
+SQL: SELECT * FROM `clang_results` ORDER BY id desc LIMIT 0,5   [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `clang_team` [ RunTime:0.018847s ]
+SQL: SELECT * FROM `clang_team` WHERE ( `type` = '教师队伍' ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.000555s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: site E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 295 行.
+NOTIC: [8] Undefined index: site E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 295 行.
+NOTIC: [8] Undefined index: site E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 295 行.
+NOTIC: [8] Undefined index: site E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 295 行.
+NOTIC: [8] Undefined index: site E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 295 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 390 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 390 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 390 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 390 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 390 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 390 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.773270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.773423s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.052178s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.034846s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.019414s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.027345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.134112s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.011745s ]
+INFO: [ view_end ] --END-- [ RunTime:0.011891s ]
+
+[ 2013-12-14T22:54:04+08:00 ] 127.0.0.1 /clang/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+NOTIC: [2048] Non-static method CommonAction::footer() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\IndexAction.class.php 第 7 行.
+NOTIC: [2048] Non-static method CommonAction::copyRight() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `clang_about` [ RunTime:0.005961s ]
+SQL: SELECT * FROM `clang_about` WHERE ( `type` = '版权信息' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000507s ]
+NOTIC: [2048] Non-static method CommonAction::youlink() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `clang_link` [ RunTime:0.005550s ]
+SQL: SELECT * FROM `clang_link` ORDER BY rank asc LIMIT 0,6   [ RunTime:0.000391s ]
+NOTIC: [2048] Non-static method CommonAction::jieshao() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 16 行.
+SQL: SELECT `content` FROM `clang_about` WHERE ( `type` = '关于我们' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `clang_practice` [ RunTime:0.005692s ]
+SQL: SELECT `id`,`title`,`time` FROM `clang_practice` WHERE ( `type` = '学生设计' ) ORDER BY id desc LIMIT 0,10   [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `clang_news` [ RunTime:0.005089s ]
+SQL: SELECT `id`,`title`,`time` FROM `clang_news` ORDER BY id desc LIMIT 0,10   [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `clang_notice` [ RunTime:0.004431s ]
+SQL: SELECT `content` FROM `clang_notice` WHERE ( `type` = '最新公告' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000331s ]
+SQL: SHOW COLUMNS FROM `clang_results` [ RunTime:0.006022s ]
+SQL: SELECT * FROM `clang_results` ORDER BY id desc LIMIT 0,5   [ RunTime:0.000643s ]
+SQL: SHOW COLUMNS FROM `clang_team` [ RunTime:0.004525s ]
+SQL: SELECT * FROM `clang_team` WHERE ( `type` = '教师队伍' ) ORDER BY id desc LIMIT 0,5   [ RunTime:0.000439s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: site E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 295 行.
+NOTIC: [8] Undefined index: site E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 295 行.
+NOTIC: [8] Undefined index: site E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 295 行.
+NOTIC: [8] Undefined index: site E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 295 行.
+NOTIC: [8] Undefined index: site E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 295 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 390 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 390 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 390 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 390 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 390 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\b71efac2c45dfbbb12a5b9b57341de1f.php 第 390 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.127786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.127845s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000669s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000433s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000367s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002086s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001050s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001129s ]
+
+[ 2013-12-14T22:54:08+08:00 ] 127.0.0.1 /clang/News/content/id/8
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.033289s ]
+INFO: [ route_check ] --END-- [ RunTime:0.033401s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+NOTIC: [2048] Non-static method CommonAction::footer() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\NewsAction.class.php 第 46 行.
+NOTIC: [2048] Non-static method CommonAction::copyRight() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `clang_about` [ RunTime:0.005120s ]
+SQL: SELECT * FROM `clang_about` WHERE ( `type` = '版权信息' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000450s ]
+NOTIC: [2048] Non-static method CommonAction::youlink() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `clang_link` [ RunTime:0.004629s ]
+SQL: SELECT * FROM `clang_link` ORDER BY rank asc LIMIT 0,6   [ RunTime:0.000925s ]
+NOTIC: [2048] Non-static method CommonAction::jieshao() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 16 行.
+SQL: SELECT `content` FROM `clang_about` WHERE ( `type` = '关于我们' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000495s ]
+NOTIC: [2048] Non-static method CommonAction::scanClick() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\NewsAction.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `clang_news` [ RunTime:0.005793s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 98 行.
+NOTIC: [8] Undefined index: news-8 E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 103 行.
+SQL: SELECT `click` FROM `clang_news` WHERE ( `id` = 8 ) LIMIT 1   [ RunTime:0.000387s ]
+SQL: UPDATE `clang_news` SET `click`=4 WHERE ( `id` = 8 ) [ RunTime:0.357720s ]
+SQL: SELECT * FROM `clang_news` WHERE ( `id` = 8 ) ORDER BY id desc  [ RunTime:0.000559s ]
+NOTIC: [2048] Non-static method CommonAction::up() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 112 行.
+SQL: SELECT * FROM `clang_news` WHERE ( `id` > '8' ) ORDER BY id asc LIMIT 0,1   [ RunTime:0.001462s ]
+NOTIC: [2048] Non-static method CommonAction::next() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 113 行.
+SQL: SELECT * FROM `clang_news` WHERE ( `id` < '8' ) ORDER BY id desc LIMIT 0,1   [ RunTime:0.000713s ]
+NOTIC: [2048] Non-static method CommonAction::rankList() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\NewsAction.class.php 第 70 行.
+SQL: SELECT * FROM `clang_news` ORDER BY click desc LIMIT 0,10   [ RunTime:0.001470s ]
+NOTIC: [2048] Non-static method CommonAction::up() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\NewsAction.class.php 第 57 行.
+SQL: SELECT * FROM `clang_news` WHERE ( `id` > '8' ) ORDER BY id asc LIMIT 0,1   [ RunTime:0.000590s ]
+NOTIC: [2048] Non-static method CommonAction::next() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\NewsAction.class.php 第 58 行.
+SQL: SELECT * FROM `clang_news` WHERE ( `id` < '8' ) ORDER BY id desc LIMIT 0,1   [ RunTime:0.000797s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\75d7aa427e9205c1dfe4b7363ddaf576.php 第 321 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\75d7aa427e9205c1dfe4b7363ddaf576.php 第 321 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\75d7aa427e9205c1dfe4b7363ddaf576.php 第 321 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\75d7aa427e9205c1dfe4b7363ddaf576.php 第 321 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\75d7aa427e9205c1dfe4b7363ddaf576.php 第 321 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\75d7aa427e9205c1dfe4b7363ddaf576.php 第 321 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.082458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082569s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000801s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000544s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000641s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002974s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001085s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001208s ]
+
+[ 2013-12-14T22:54:15+08:00 ] 127.0.0.1 /clang/Home/Content/method.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000779s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `clang_about` [ RunTime:0.006214s ]
+SQL: SELECT * FROM `clang_about` WHERE ( `type` = '版权信息' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000712s ]
+SQL: SHOW COLUMNS FROM `clang_link` [ RunTime:0.004434s ]
+SQL: SELECT * FROM `clang_link` ORDER BY rank asc LIMIT 0,6   [ RunTime:0.000347s ]
+SQL: SELECT `content` FROM `clang_about` WHERE ( `type` = '关于我们' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `clang_method` [ RunTime:0.282978s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clang_method` LIMIT 1   [ RunTime:0.001125s ]
+SQL: SELECT * FROM `clang_method` ORDER BY id  desc LIMIT 0,15   [ RunTime:0.001908s ]
+SQL: SELECT * FROM `clang_method` ORDER BY click desc LIMIT 0,16   [ RunTime:0.002824s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: page E:\Web\website\clang\APP\Runtime\Cache\Home\41cf007d4f96eae1602330f0f79bddb1.php 第 248 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\41cf007d4f96eae1602330f0f79bddb1.php 第 305 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\41cf007d4f96eae1602330f0f79bddb1.php 第 305 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\41cf007d4f96eae1602330f0f79bddb1.php 第 305 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\41cf007d4f96eae1602330f0f79bddb1.php 第 305 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\41cf007d4f96eae1602330f0f79bddb1.php 第 305 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\41cf007d4f96eae1602330f0f79bddb1.php 第 305 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.129240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129432s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001667s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003008s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001188s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008125s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003390s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003633s ]
+
+[ 2013-12-14T22:54:16+08:00 ] 127.0.0.1 /clang/Content/meContent/id/24
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000616s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000677s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `clang_about` [ RunTime:0.004545s ]
+SQL: SELECT * FROM `clang_about` WHERE ( `type` = '版权信息' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `clang_link` [ RunTime:0.004501s ]
+SQL: SELECT * FROM `clang_link` ORDER BY rank asc LIMIT 0,6   [ RunTime:0.000399s ]
+SQL: SELECT `content` FROM `clang_about` WHERE ( `type` = '关于我们' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000271s ]
+SQL: SHOW COLUMNS FROM `clang_method` [ RunTime:0.004093s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 98 行.
+NOTIC: [8] Undefined index: method-24 E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 103 行.
+SQL: SELECT `click` FROM `clang_method` WHERE ( `id` = 24 ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: UPDATE `clang_method` SET `click`=3 WHERE ( `id` = 24 ) [ RunTime:0.038998s ]
+SQL: SELECT * FROM `clang_method` WHERE ( `id` = 24 ) ORDER BY id desc  [ RunTime:0.000399s ]
+SQL: SELECT * FROM `clang_method` WHERE ( `id` > '24' ) ORDER BY id asc LIMIT 0,1   [ RunTime:0.000304s ]
+SQL: SELECT * FROM `clang_method` WHERE ( `id` < '24' ) ORDER BY id desc LIMIT 0,1   [ RunTime:0.000306s ]
+SQL: SELECT * FROM `clang_method` ORDER BY click desc LIMIT 0,16   [ RunTime:0.000545s ]
+SQL: SELECT * FROM `clang_method` WHERE ( `id` > '24' ) ORDER BY id asc LIMIT 0,1   [ RunTime:0.000294s ]
+SQL: SELECT * FROM `clang_method` WHERE ( `id` < '24' ) ORDER BY id desc LIMIT 0,1   [ RunTime:0.000278s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: yun E:\Web\website\clang\APP\Runtime\Cache\Home\e889caa2b7b5aef6a10c613080ad4726.php 第 256 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\e889caa2b7b5aef6a10c613080ad4726.php 第 382 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\e889caa2b7b5aef6a10c613080ad4726.php 第 382 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\e889caa2b7b5aef6a10c613080ad4726.php 第 382 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\e889caa2b7b5aef6a10c613080ad4726.php 第 382 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\e889caa2b7b5aef6a10c613080ad4726.php 第 382 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\e889caa2b7b5aef6a10c613080ad4726.php 第 382 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.070753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070810s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000554s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000551s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000365s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002115s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000961s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2013-12-14T22:58:41+08:00 ] 127.0.0.1 /clang/Home/News/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001320s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001455s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+NOTIC: [2048] Non-static method CommonAction::footer() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\NewsAction.class.php 第 12 行.
+NOTIC: [2048] Non-static method CommonAction::copyRight() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `clang_about` [ RunTime:0.005289s ]
+SQL: SELECT * FROM `clang_about` WHERE ( `type` = '版权信息' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000443s ]
+NOTIC: [2048] Non-static method CommonAction::youlink() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `clang_link` [ RunTime:0.004384s ]
+SQL: SELECT * FROM `clang_link` ORDER BY rank asc LIMIT 0,6   [ RunTime:0.000354s ]
+NOTIC: [2048] Non-static method CommonAction::jieshao() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 16 行.
+SQL: SELECT `content` FROM `clang_about` WHERE ( `type` = '关于我们' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000273s ]
+NOTIC: [2048] Non-static method CommonAction::scan() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\NewsAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `clang_news` [ RunTime:0.005578s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clang_news` LIMIT 1   [ RunTime:0.000617s ]
+SQL: SELECT * FROM `clang_news` ORDER BY id  desc LIMIT 0,5   [ RunTime:0.000440s ]
+SQL: SHOW COLUMNS FROM `clang_notice` [ RunTime:0.004309s ]
+SQL: SELECT `content` FROM `clang_notice` WHERE ( `type` = '最新公告' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000314s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\eb3e7806d73bc2cd5841403a9683f323.php 第 319 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\eb3e7806d73bc2cd5841403a9683f323.php 第 319 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\eb3e7806d73bc2cd5841403a9683f323.php 第 319 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\eb3e7806d73bc2cd5841403a9683f323.php 第 319 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\eb3e7806d73bc2cd5841403a9683f323.php 第 319 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\eb3e7806d73bc2cd5841403a9683f323.php 第 319 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.074587s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074642s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000554s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000431s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000339s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001938s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000830s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000898s ]
+
+[ 2013-12-14T22:58:46+08:00 ] 127.0.0.1 /clang/News/content/id/8
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001335s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001455s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+NOTIC: [2048] Non-static method CommonAction::footer() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\NewsAction.class.php 第 46 行.
+NOTIC: [2048] Non-static method CommonAction::copyRight() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `clang_about` [ RunTime:0.005274s ]
+SQL: SELECT * FROM `clang_about` WHERE ( `type` = '版权信息' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000464s ]
+NOTIC: [2048] Non-static method CommonAction::youlink() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `clang_link` [ RunTime:0.005955s ]
+SQL: SELECT * FROM `clang_link` ORDER BY rank asc LIMIT 0,6   [ RunTime:0.000446s ]
+NOTIC: [2048] Non-static method CommonAction::jieshao() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 16 行.
+SQL: SELECT `content` FROM `clang_about` WHERE ( `type` = '关于我们' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000304s ]
+NOTIC: [2048] Non-static method CommonAction::scanClick() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\NewsAction.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `clang_news` [ RunTime:0.004107s ]
+NOTIC: [8] A session had already been started - ignoring session_start() E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 98 行.
+SQL: SELECT * FROM `clang_news` WHERE ( `id` = 8 ) ORDER BY id desc  [ RunTime:0.000359s ]
+NOTIC: [2048] Non-static method CommonAction::up() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 112 行.
+SQL: SELECT * FROM `clang_news` WHERE ( `id` > '8' ) ORDER BY id asc LIMIT 0,1   [ RunTime:0.000328s ]
+NOTIC: [2048] Non-static method CommonAction::next() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\CommonAction.class.php 第 113 行.
+SQL: SELECT * FROM `clang_news` WHERE ( `id` < '8' ) ORDER BY id desc LIMIT 0,1   [ RunTime:0.000345s ]
+NOTIC: [2048] Non-static method CommonAction::rankList() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\NewsAction.class.php 第 70 行.
+SQL: SELECT * FROM `clang_news` ORDER BY click desc LIMIT 0,10   [ RunTime:0.000776s ]
+NOTIC: [2048] Non-static method CommonAction::up() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\NewsAction.class.php 第 57 行.
+SQL: SELECT * FROM `clang_news` WHERE ( `id` > '8' ) ORDER BY id asc LIMIT 0,1   [ RunTime:0.000666s ]
+NOTIC: [2048] Non-static method CommonAction::next() should not be called statically, assuming $this from incompatible context E:\Web\website\clang\APP\Modules\Home\Action\NewsAction.class.php 第 58 行.
+SQL: SELECT * FROM `clang_news` WHERE ( `id` < '8' ) ORDER BY id desc LIMIT 0,1   [ RunTime:0.000443s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\75d7aa427e9205c1dfe4b7363ddaf576.php 第 321 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\75d7aa427e9205c1dfe4b7363ddaf576.php 第 321 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\75d7aa427e9205c1dfe4b7363ddaf576.php 第 321 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\75d7aa427e9205c1dfe4b7363ddaf576.php 第 321 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\75d7aa427e9205c1dfe4b7363ddaf576.php 第 321 行.
+NOTIC: [8] Undefined variable: youlin E:\Web\website\clang\APP\Runtime\Cache\Home\75d7aa427e9205c1dfe4b7363ddaf576.php 第 321 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015573s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000569s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000403s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000311s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002115s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000907s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001004s ]
+

@@ -1,0 +1,182 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>后台管理--首页--菜单栏</title>
+        <style type="text/css">
+            *{margin:0; padding:0}
+            #nav{
+                width:180px;
+                margin:10px;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+            }
+            #nav h3{ 
+                text-align: center;
+                cursor:pointer; 
+                line-height:30px; 
+                height:30px; 
+                background-color:#00AAFF; 
+                color:#fff;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+            }
+            #nav a{
+                text-align: center;
+                padding: 6px;
+                display:block; 
+                line-height:24px;
+                color:#666666;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+            }
+            #nav a:hover{
+                background-color:#eee; 
+                color:#000;
+            }
+            #nav div{
+                display:none; 
+                border:1px solid #000; 
+                border-top:none
+            }
+
+            a{
+                text-decoration: none;
+            }
+        </style>
+        <script type="text/javascript">
+	    function $(id) {
+		return document.getElementById(id)
+	    }
+	    window.onload = function() {
+		$("nav").onclick = function(e) {
+		    var src = e ? e.target : event.srcElement;
+		    if (src.tagName == "H3") {
+			var next = src.nextElementSibling || src.nextSibling;
+			next.style.display = (next.style.display == "block") ? "none" : "block";
+		    }
+		}
+	    }
+        </script>
+    </head>
+
+    <body>
+        <div id="nav">
+            <h3>最新公告</h3>
+            <div>
+                <a href="__GROUP__/Notice/add" target="rightFrame">添加</a>
+                <a href="__GROUP__/Notice/browse" target="rightFrame">浏览</a>
+
+            </div>
+
+            <h3>本周课表</h3>
+            <div>
+                <a href="__GROUP__/Timetable/add" target="rightFrame">添加</a>
+                <a href="__GROUP__/Timetable/browse" target="rightFrame">浏览</a>
+
+            </div>
+
+            <h3>新闻资讯</h3>
+            <div>
+                <a href="__GROUP__/News/add" target="rightFrame">添加</a>
+                <a href="__GROUP__/News/browse" target="rightFrame">浏览</a>
+            </div>
+
+            <h3>教学团队</h3>
+            <div>
+                <a href="__GROUP__/Teachers/browse" target="rightFrame">教师队伍</a>
+                <a href="__GROUP__/Projects/browse" target="rightFrame">科研项目</a>
+                <a href="__GROUP__/Thesis/browse" target="rightFrame">科研论文</a>
+
+            </div>
+
+            <h3>教学内容</h3>
+            <div>
+                <a href="__GROUP__/Introduce/browse" target="rightFrame">课程介绍</a>
+                <a href="__GROUP__/Outline/browse" target="rightFrame">课程大纲</a>
+                <a href="__GROUP__/Method/browse" target="rightFrame">学习方法</a>
+                <a href="__GROUP__/Emphasis/browse" target="rightFrame">重 点</a>
+                <a href="__GROUP__/Difficulty/browse" target="rightFrame">难 点</a>
+            </div>
+
+            <h3>教学实践</h3>
+            <div>
+                <a href="__GROUP__/Classics/browse" target="rightFrame">经典程序</a>
+                <a href="__GROUP__/Design/browse" target="rightFrame">学生设计</a>
+                <a href="__GROUP__/Disabuse/browse" target="rightFrame">教师解惑</a>
+
+            </div>
+
+            <h3>教学成果</h3>
+            <div>
+                <a href="__GROUP__/Student/browse" target="rightFrame">学生荣誉</a>
+                <a href="__GROUP__/Teacher/browse" target="rightFrame">教师荣誉</a>
+
+            </div>
+
+
+
+            <h3>视频教学</h3>
+            <div>
+                <a href="__GROUP__/Local/browse" target="rightFrame">本地视频 </a>
+                <a href="__GROUP__/Online/browse" target="rightFrame">网络视频</a>
+            </div>
+
+            <h3>资源下载</h3>
+            <div>
+                <a href="__GROUP__/Ebook/browse" target="rightFrame">电子书</a>
+		<a href="__GROUP__/Tests/browse" target="rightFrame">试题库</a>
+
+                <a href="__GROUP__/Code/browse" target="rightFrame">开源代码</a>
+                <a href="__GROUP__/Video/browse" target="rightFrame">视频下载</a>
+
+            </div>
+
+            <h3>版权信息</h3>
+            <div>
+                <a href="__GROUP__/CopyRight/add" target="rightFrame">添加</a>
+                <a href="__GROUP__/CopyRight/browse" target="rightFrame">浏览</a>
+
+            </div>
+
+            <h3>关于我们</h3>
+            <div>
+                <a href="__GROUP__/About/add" target="rightFrame">添加</a>
+                <a href="__GROUP__/About/browse" target="rightFrame">浏览</a>
+
+            </div>
+
+            <h3>联系我们</h3>
+            <div>
+                <a href="__GROUP__/Relation/add" target="rightFrame">添加</a>
+                <a href="__GROUP__/Relation/browse" target="rightFrame">浏览</a>
+
+            </div>
+
+            <h3>常见问题</h3>
+            <div>
+                <a href="__GROUP__/Fvq/add" target="rightFrame">添加</a>
+                <a href="__GROUP__/Fvq/browse" target="rightFrame">浏览</a>
+
+            </div>
+
+            <h3>友情链接</h3>
+            <div>
+                <a href="__GROUP__/Link/add" target="rightFrame">添加</a>
+                <a href="__GROUP__/Link/browse" target="rightFrame">浏览</a>
+            </div>
+
+
+            <h3>用户管理</h3>
+            <div>
+                <a href="__GROUP__/User/add" target="rightFrame">添加</a>
+                <a href="__GROUP__/User/browse" target="rightFrame">浏览</a>
+                <a href="__GROUP__/Login/logout" target="_top">退出</a>
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+
+/* 
+    Created on : 2013-10-30, 15:33:08
+    Author     : Hong
+*/
+
+.tb{
+    min-width: 900px;
+    border: 1px red dashed;
+    border-radius: 6px;
+    text-align: center;
+}
+.tb th{
+    background-color: #00AAFF;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+}
+.zou{
+    text-align: left
+}
+.you{
+    text-align: right;
+}
+.biao{
+    text-align: left;
+    min-width:  130px;
+    max-width: 200px;
+}
+.zhong{
+    text-align: left;
+    min-width:  300px;
+    max-width: 560px;
+}
+.caozuo{
+
+    width: 76px;
+}
+.tb td{
+    line-height: 1.7em;
+    border-bottom: 1px #f5f87b dashed;
+}
+.tb a{
+    text-decoration: none;
+}
+
+.page{
+    text-align: center;
+    margin-top: 6px;
+}
+.page a{
+    text-decoration: none;
+}
+
+/*
+ * 添加数据   查看数据  按钮
+ */
+.csadd{
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+}

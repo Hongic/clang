@@ -1,0 +1,80 @@
+﻿
+<!--   页尾：版权、校内、投资公司   -->
+<div class="fo">
+
+    <!--   版权      -->
+    <div class="foot">
+        <div class="foote">
+            我们 
+            <hr>
+	    <span style="width:188px;display: block;float: left;text-align: left;"> 
+		<a href="{:U('Home/About/us')}">
+		    关于我们
+		</a>
+	    </span>
+	    <br>
+	    <span style="width:188px;display: block;float: left;text-align: left;"> 
+		<a href="{:U('Home/About/relation')}">
+		    联系我们
+		</a>
+	    </span>
+	    <br>
+	    <span style="width:188px;display: block;float: left;text-align: left;"> 
+		<a href="{:U('Home/About/fvq')}">
+		    常见问题
+		</a>
+	    </span>
+            <div style="text-align: left;">
+                <a href="{:U('Admin/Login/login')}" target="_bliank">
+                    管理
+                </a>
+            </div>
+        </div>
+
+        <!--   链接      -->
+        <div class="foote">
+            友情链接 
+            <hr>
+	    <volist name="youlink" id="youlink">
+		<span style="width:188px;display: block;float: left;text-align: left;">
+		    <a href="{$youlink.link}" target="_blank" title="{$youlin.title}">
+			{$youlink.title|utf8Substr=0,11}
+		    </a>
+		</span>
+
+	    </volist>
+
+        </div>
+
+	<!---   会标               --->
+
+	<div class="foote">
+	    会标
+	    <hr>
+	    <img src="__PUBLIC__/Images/footer.jpg" style="margin-top: 3px;">
+	</div>
+
+        <!--   介绍      -->
+        <div class="foote">
+            介绍 
+            <hr>
+	    <span style="width:188px;display: block;float: left;text-align: left;padding-top: 3px;"> 
+		{$jieshao|utf8Substr=0,100}
+	    </span>
+        </div>
+
+	<!--   版权      -->
+        <div class="foote">
+            版权 
+            <hr>
+            <volist name="copyRight" id="cpy">
+                <span style="width:188px;display: block;float: left;text-align: left;padding-top:  3px;"> 
+		    {$cpy.content}
+                </span>
+            </volist>
+        </div>
+
+
+    </div>
+
+</div>

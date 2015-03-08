@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>资源下载--更多</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/public.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/main.css"/>
+
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/pro_drop_1.css"/>
+        <script type="text/javascript" src='__PUBLIC__/Js/stuHover.js'></script>
+    </head>
+    <body>
+
+        <!--   页头：导航栏       -->
+    <include file="Index:header"/>
+
+    <!--   主要内容           -->
+    <div class="main">
+	<div class="pub_content_left">
+	    <div class="pub_biaoti">
+		试题库
+	    </div>
+	    <div class="pub_content">
+
+		<volist name="result" id="code">
+		    <div style="margin-bottom: 26px;">
+			<!--      左侧 ：标题    -->
+
+			<div class="test_titile">
+			    <span>
+				<a href="__URL__/tesContent/id/{$code.id}"  title="{$code.title}">
+				    {$code.title|utf8Substr=0,30}
+				</a>
+			    </span>
+
+			</div>
+
+			<!--    右侧：下载、时间         -->
+			<div class="test_DT">
+			    <a href="{$code.yun}" title="网盘下载">
+				<img src="__PUBLIC__/Images/test.jpg" title="网盘下载" class="test_DT_img">
+			    </a>
+			    {$code.time|substr=0,10}
+			</div>
+			
+
+		    </div>
+
+		</volist>
+
+
+	    </div>
+	    <div class="page">
+		{$page}
+	    </div>
+
+	</div>
+	<div class="pub_content_rank">
+	    <div class="pub_biaoti">
+		下载榜
+	    </div>
+	    <div class="rank">
+		<volist name="rank" id="rank">
+		    <a href="__URL__/tesContent/id/{$code.id}" title="{$rank.title}">
+			{$rank.title|utf8Substr=0,17}
+		    </a>
+		    <br>
+		</volist>
+	    </div>
+	</div>
+
+    </div>
+
+    <!--  页尾  -->
+    <include file="Index:footer"/>
+</body>
+</html>

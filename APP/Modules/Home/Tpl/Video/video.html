@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>视频教学-视频下载</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/public.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/main.css"/>
+
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/pro_drop_1.css"/>
+        <script type="text/javascript" src='__PUBLIC__/Js/stuHover.js'></script>
+    </head>
+    <body>
+
+        <!--   页头：导航栏       -->
+    <include file="Index:header"/>
+
+    <!--   主要内容           -->
+    <div class="main">
+	<div class="pub_content_left">
+	    <div class="pub_biaoti">
+		视频下载
+	    </div>
+	    <div class="pub_content">
+
+		<volist name="result" id="code">
+		    <div style="margin-bottom: 10px;">
+			<!--      上层 ：类型、标题、时间     -->
+			<div style="clear: both;">
+			    <div class="ebook_shang">
+
+				<span>
+				    <a href="__URL__/vContent/id/{$code.id}"  title="{$code.title}">
+					{$code.title|utf8Substr=0,30}
+				    </a>
+				</span>
+
+			    </div>
+			    <div style="float: right">
+
+				{$code.time|substr=0,10}
+			    </div>
+
+			</div>
+
+
+
+			<!--      中层 ：关注热度、内容、下载          -->
+			<div style="clear: both;margin-bottom: 10px;">
+
+			    <div class="ebook_zhong_redu">
+				{$code.click}
+
+			    </div>
+
+			    <div class="ebook_zhong_download">
+				<a href="{$code.yun}" target="_blank" title="网盘下载">
+				    <img src="__PUBLIC__/Images/download.jpg">
+				</a>
+			    </div>
+
+			    <div class="ebook_zhong_content">
+
+				{$code.content|utf8Substr=0,200}
+
+			    </div>
+
+			</div>
+
+		    </div>
+
+		</volist>
+
+
+	    </div>
+	    <div class="page">
+		{$page}
+	    </div>
+
+	</div>
+	<div class="pub_content_rank">
+	    <div class="pub_biaoti">
+		下载榜
+	    </div>
+	    <div class="rank">
+		<volist name="rank" id="rank">
+		    <a href="__URL__/vContent/id/{$code.id}" title="{$rank.title}">
+			{$rank.title|utf8Substr=0,17}
+		    </a>
+		    <br>
+		</volist>
+	    </div>
+	</div>
+
+    </div>
+
+    <!--  页尾  -->
+    <include file="Index:footer"/>
+</body>
+</html>

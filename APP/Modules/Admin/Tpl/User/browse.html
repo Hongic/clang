@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>用户管理</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/table.css">
+    </head>
+    <body>
+        <div>
+            <form action="" method="post">
+                <table class="tb">
+                    <tr>
+                        <th>ID</th>
+                        <th>用户</th>
+                        <th>密码</th>
+                        <th>级别</th>
+                        <th>注册时间</th>
+                        <th>操作</th>
+                    </tr>
+
+                    <!---   数据列表    --->
+                    <volist name="result" id="vo" empty="no没有数据"> 
+                        <tr>
+                            <td>{$vo.id}</td>
+                            <td class="zou">{$vo.name}</td>
+                            <td class="zou">{$vo.pwd}</td>
+                            <td>{$vo.level}</td>
+                            <td>{$vo.time}</td>
+                            <td class="caozuo">
+                                <a href="__URL__/delete/delid/{$vo.id}" alt="不可恢复，请注意操作。。。">删除</a>  <a href="__URL__/edit/edid/{$vo.id}">修改</a>
+                            </td>
+                        </tr>
+                    </volist>
+                </table>
+            </form>
+        </div>
+
+        <div class="page">{$page}</div>
+    </body>
+</html>

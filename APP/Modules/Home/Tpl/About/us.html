@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>关于我们</title>
+	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/public.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/main.css"/>
+
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/pro_drop_1.css"/>
+        <script type="text/javascript" src='__PUBLIC__/Js/stuHover.js'></script>
+    </head>
+    <body>
+
+        <!--   页头：导航栏       -->
+    <include file="Index:header"/>
+
+    <!--     主要内容            -->
+    <div class="main">
+	<div>
+
+	    <volist name="us" id="us">
+		<div class="all_title">
+		    <h1>
+			{$us.title}
+		    </h1>
+		    <br>
+		    发布者：{$us.author} 时间：{$us.time}
+		</div>
+		<div class="all_content">
+		    {$us.content}
+
+		</div>
+
+
+	    </volist>
+
+	</div>
+
+
+    </div>
+
+
+    <!--  页尾  -->
+    <include file="Index:footer"/>
+</body>
+</html>

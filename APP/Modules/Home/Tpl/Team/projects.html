@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>教学团队--科研项目</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/public.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/main.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/pic.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/pro_drop_1.css"/>
+        <script type="text/javascript" src='__PUBLIC__/Js/stuHover.js'></script>
+    </head>
+    <body>
+
+        <!--   页头：导航栏       -->
+    <include file="Index:header"/>
+
+    <!--   主要内容           -->
+    <div class="main">
+        <div class="pub_content_left">
+	    <div class="pub_biaoti">
+		科研项目
+	    </div>
+	    <div class="pub_content">
+
+		<volist name='result' id="pro">
+
+		    <div style="clear: both;">
+			<div class="projects_title">
+			    <a href="__URL__/pContent/id/{$pro.id}" title="{$pro.title}">
+				{$pro.title|utf8Substr=0,30}
+			    </a>
+			</div>
+			<div class="news_time_right">
+			    {$pro.time|utf8Substr=0,10}
+			</div>
+		    </div>
+		    <div  class="projects_content">
+			{$pro.content|utf8Substr=0,286}
+		    </div>
+		    <br><br>
+		</volist>
+	    </div>
+	</div>
+
+
+	<div class="pub_content_rank">
+	    <div class="pub_biaoti">
+		阅读榜
+	    </div>
+	    <div class="rank">
+		<volist name="rank" id="rank">
+		    <a href="__URL__/pContent/id/{$pro.id}" title="{$pro.title}">
+			{$rank.title|utf8Substr=0,17}
+		    </a>
+		    <br>
+		</volist>
+	    </div>
+	</div>
+
+    </div>
+
+    <!--  页尾  -->
+    <include file="Index:footer"/>
+</body>
+</html>

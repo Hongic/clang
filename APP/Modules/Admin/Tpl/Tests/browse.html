@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>资源下载-试题库-查看</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/table.css">
+    </head>
+    <body>
+
+        <div>
+            <a href="__GROUP__/Tests/add" target="rightFrame">
+                <input type="button" value="添加数据" class="csadd">
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="__GROUP__/Tests/browse" target="rightFrame">
+                <input type="button" value="查看数据" class="csadd">
+            </a>
+        </div>
+
+        <div>
+
+            <table class="tb">
+                <tr>
+                    <th>ID</th>
+                    <th>标题</th>
+                    <th>内容</th>
+                    <th>网盘地址</th>
+                    <th>发布者</th>
+                    <th>时间</th>
+                    <th>点击量</th>
+                    <th>操作</th>
+                </tr>
+
+                <!---   数据列表    --->
+                <volist name="result" id="vo" empty="no没有数据"> 
+                    <tr>
+                        <td>{$vo.id}</td>
+                        <td class="biao">{$vo.title|utf8Substr=0,20}</td>
+                        <td class="zhong">{$vo.content|utf8Substr=0,50}</td>
+                        <td class="biao">{$vo.yun|default="暂无"}</td>
+                        <td>{$vo.author|default="暂无"}</td>
+                        <td>{$vo.time|default="暂无"}</td>
+                        <td>{$vo.click|default="暂无"}</td>
+                        <td class="caozuo">
+                            <a href="__URL__/delete/delid/{$vo.id}" alt="不可恢复，请注意操作。。。">删除</a>  <a href="__URL__/edit/edid/{$vo.id}">修改</a>
+                        </td>
+                    </tr>
+
+                </volist>
+
+            </table>
+
+
+
+        </div>
+
+        <div class="page">{$page}</div>
+
+    </body>
+</html>

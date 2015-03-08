@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>教学团队--教师队伍</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/public.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/main.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/pic.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/pro_drop_1.css"/>
+        <script type="text/javascript" src='__PUBLIC__/Js/stuHover.js'></script>
+    </head>
+    <body>
+
+        <!--   页头：导航栏       -->
+    <include file="Index:header"/>
+
+    <!--   主要内容           -->
+    <div class="main">
+        <div>
+
+	    <volist name='result' id="teachers">
+
+		<div style="float: left;margin: 8px;">
+
+		    <div class="teachers">
+			<a href="__URL__/tContent/id/{$teachers.id}" >
+			    <img src="__APP__/Uploads/Team/Teachers/m_{$teachers.pic}">
+			</a>
+		    </div>
+
+		    <div style="text-align: center;">
+			{$teachers.title|utf8Substr=0,10}
+		    </div>
+
+		</div>
+	    </volist>
+	</div>
+
+    </div>
+
+    <!--  页尾  -->
+    <include file="Index:footer"/>
+</body>
+</html>

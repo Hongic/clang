@@ -1,0 +1,138 @@
+<div class="main">
+
+    <!--                    LOGO  1000x200                                           -->
+    <div style="height: 300px;width: 1000px;">
+        <img src="__PUBLIC__/Images/logo.jpg" class="main_img">
+    </div>
+
+
+    <!--                   最新公告、新闻资讯、学生设计                              -->
+    <div style="clear: both;">
+
+        <!--               最新公告                       -->
+	<div class="three">
+
+            <div class="three_title">
+                最新公告
+            </div>
+	    <div style="height: 300px;overflow: auto;padding: 6px;"> 
+		<marquee onmouseover="this.stop()" onmouseout="this.start()" scrollAmount="3" scrollDelay="100" direction="up" height="290">
+		    {$notice}
+		</marquee>
+	    </div>
+
+            </volist>
+        </div>
+
+
+        <!--                   最新资讯    10 id desc                 -->
+        <div class="three">
+            <!--  背景是图片    -->
+            <div  class="three_title">
+                最新资讯
+            </div>
+            <volist name="nes" id="vo">
+                <span style="float: left;padding-left: 3px;"> 
+                    <a href="__GROUP__/News/content/id/{$vo.id}" title="{$vo.title}">
+                        {$vo.title|utf8Substr=0,13}
+                    </a>  
+                </span>
+                <span style="float: right;padding-right: 3px;">
+                    {$vo.time|substr=0,10}
+                </span>
+                <br>
+            </volist>
+        </div>
+
+        <!--               学生设计  10  id desc                 -->
+        <div class="three">
+            <!--  背景是图片    -->
+            <div  class="three_title">
+                学生设计
+            </div>
+
+            <volist name="des" id="vo">
+                <span style="float: left;padding-left: 3px;"> 
+                    <a href="__GROUP__/Practice/desContent/id/{$vo.id}" title="{$vo.title}">
+                        {$vo.title|utf8Substr=0,13}
+                    </a>  
+                </span>
+                <span style="float: right;padding-right: 3px;">
+                    {$vo.time|substr=0,10}
+                </span>
+                <br>
+            </volist>
+
+        </div>
+    </div>
+
+
+    <!--                     荣誉图  左滚动                                  -->
+    <div class="pic"  >
+
+        <div class="three_title" style="width: 990px;">
+            最新荣誉
+        </div>
+
+
+
+	<div id="demo">
+            <div id="indemo">
+                <div id="demo1">
+                    <volist name="pic" id="pic">
+			<div class="two">
+			    <a href="{$pic.site}"  target="_blank">
+				<img src="__ROOT__/Uploads/Results/m_{$pic.pic}" border="0">
+				<br>
+				{$pic.title|utf8Substr=0,10}
+			    </a>
+			</div>
+                    </volist>
+
+                </div>
+                <div id="demo2"> </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script>
+
+	var speed = 10;
+	var tab = document.getElementById("demo");
+	var tab1 = document.getElementById("demo1");
+	var tab2 = document.getElementById("demo2");
+	tab2.innerHTML = tab1.innerHTML;
+	function Marquee() {
+	    if (tab2.offsetWidth - tab.scrollLeft <= 0)
+		tab.scrollLeft -= tab1.offsetWidth
+	    else {
+		tab.scrollLeft++;
+	    }
+	}
+	var MyMar = setInterval(Marquee, speed);
+	tab.onmouseover = function() {
+	    clearInterval(MyMar)
+	};
+	tab.onmouseout = function() {
+	    MyMar = setInterval(Marquee, speed)
+	};
+
+    </script>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>教学实践-学生设计-详细内容</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/public.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/main.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/pro_drop_1.css"/>
+	<script type="text/javascript" src="__PUBLIC__/Editor/kindeditor.js"></script>
+	<script type="text/javascript" src='__PUBLIC__/Js/stuHover.js'></script>
+    </head>
+    <body>
+        <!--              页头：导航栏                               -->
+    <include file="Index:header"/>
+
+    <!---                具体内容                                    -->
+    <div class="main">
+
+	<div>
+
+	    <!--    左边：详细内容     -->
+	    <div class="pub_content_left">
+
+		<div style="min-height: 439px; padding: 3px">
+
+		    <volist name="res" id="vo">
+			<div class="pub_content_left_cen">
+			    <h2>{$vo.title} </h2>
+			    <br>
+			    发布者：{$vo.author} 时间：{$vo.time} 点击量：{$vo.click}
+			</div>
+			<br>
+			<div style="line-height: 1.6em;min-height: 300px;">
+			    {$vo.content}
+			</div>
+
+		    </volist>
+		</div>
+
+		<br>
+
+		<!-- 百度分享 -->
+		<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" >
+		    <span class="bds_more">分享到：</span>
+		    <a class="bds_qzone"></a>
+		    <a class="bds_tsina"></a>
+		    <a class="bds_tqq"></a>
+		    <a class="bds_renren"></a>
+		    <a class="bds_t163"></a>
+		    <a class="shareCount"></a>
+		</div>
+		<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=0" ></script>
+		<script type="text/javascript" id="bdshell_js"></script>
+		<script type="text/javascript">
+		    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000)
+		</script>
+		<!-- Baidu Button END -->
+
+		<br>
+		<br>
+
+		<!--  上一篇  -->
+		<div style="margin-top: 6px;">
+		    <volist name="up" id="up">
+			上一篇： <a href="__URL__/desContent/id/{$up.id}" title="{$up.title}">
+			    {$up.title|utf8Substr=0,32}
+			</a>  <br>
+		    </volist>
+		    <volist name="next" id="next">
+			下一篇： <a href="__URL__/desContent/id/{$next.id}" title="{$next.title}">
+			    {$next.title|utf8Substr=0,32}
+			</a>  
+		    </volist>
+
+		</div>
+
+	    </div>
+
+	    <!--      右边：阅读点击榜      click  desc      -->
+	    <div class="pub_content_rank">
+		<h2 class="pub_title">阅读榜</h2>
+		<br>
+		<div class="rank">
+		    <volist name="rank" id="rank">
+			<span> 
+			    <a href="__URL__/desContent/id/{$rank.id}" title="{$rank.title}">{$rank.title|utf8Substr=0,17}</a>  
+			</span>
+			<br>
+		    </volist>
+		</div>
+	    </div>
+
+	</div>
+
+
+
+
+
+	<!--   上传      -->
+	<div class="up_fen">
+	    <h2 style="text-align: center;">分享你的程序设计</h2>
+	    <br>
+	    <form action="__URL__/upFen" method="post" name="form" >
+		<table style="clear: both;float: left;">
+		    <tr> 
+			<td>昵称：</td>
+			<td><input type="text" name="name" class="fen_inp"></td>
+		    </tr>
+		    <tr>
+			<td>标题：</td>
+			<td><input type="text" name="title" class="fen_inp"></td>
+		    </tr>
+		    <tr>
+			<td>内容：</td>
+			<td>
+			    <textarea id="kindeditor_id" name="content"  style="width: 580px;height: 300px;text-align: left;"></textarea>
+			</td>
+		    </tr>
+		    <tr>
+			<td>&nbsp;</td>
+			<td style="text-align: center;">
+			    <input type="submit" name="submit" value="分享"  class="fen_sub">
+			</td>
+		    </tr>
+		</table>
+	    </form>
+
+	    <script>
+		var editor;
+		KindEditor.ready(function(K) {
+		    editor = K.create('#kindeditor_id');
+		});
+	    </script>
+
+	</div>
+
+    </div>
+
+
+    <!--                页尾                                         -->
+    <include file="Index:footer"/>
+</body>
+</html>

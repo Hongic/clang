@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>教学团队--科研论文--详细</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/public.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/main.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/pic.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/pro_drop_1.css"/>
+        <script type="text/javascript" src='__PUBLIC__/Js/stuHover.js'></script>
+    </head>
+    <body>
+
+        <!--   页头：导航栏       -->
+    <include file="Index:header"/>
+
+    <!--   主要内容           -->
+    <div class="main">
+        <div class="pub_content_left">
+	    <div class="pub_biaoti">
+		科研论文
+	    </div>
+	    <div class="pub_content">
+
+		<volist name='res' id="the">
+
+		    <div style="clear: both;">
+			<div class="pub_content_left_cen">
+			    <h2>{$the.title} </h2>
+			    <br>
+			    发布者：{$the.author} 时间：{$the.time} 点击量：{$the.click}
+			</div>
+			<br>
+			<div style="line-height: 1.6em;min-height: 300px;">
+			    {$the.content}
+			</div>
+		    </div>
+		</volist>
+	    </div>
+
+
+	    <br>
+	    <!-- 百度分享 -->
+	    <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" >
+		<span class="bds_more">分享到：</span>
+		<a class="bds_qzone"></a>
+		<a class="bds_tsina"></a>
+		<a class="bds_tqq"></a>
+		<a class="bds_renren"></a>
+		<a class="bds_t163"></a>
+		<a class="shareCount"></a>
+	    </div>
+	    <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=0" ></script>
+	    <script type="text/javascript" id="bdshell_js"></script>
+	    <script type="text/javascript">
+		document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000)
+	    </script>
+	    <!-- Baidu Button END -->
+	    <br><br>
+
+	    <!--  上一篇  -->
+            <div style="margin-top: 6px;">
+                <volist name="up" id="up">
+                    上一篇： <a href="__URL__/thContent/id/{$up.id}" title="{$up.title}">
+                        {$up.title|utf8Substr=0,32}
+                    </a>  <br>
+                </volist>
+                <volist name="next" id="next">
+                    下一篇： <a href="__URL__/thContent/id/{$next.id}" title="{$next.title}">
+                        {$next.title|utf8Substr=0,32}
+                    </a>  
+                </volist>
+
+            </div>
+
+	</div>
+
+
+	<div class="pub_content_rank">
+	    <div class="pub_biaoti">
+		阅读榜
+	    </div>
+	    <div class="rank">
+		<volist name="rank" id="rank">
+		    <a href="__URL__/thContent/id/{$rank.id}" title="{$rank.title}">
+			{$rank.title|utf8Substr=0,17}
+		    </a>
+		    <br>
+		</volist>
+	    </div>
+	</div>
+
+    </div>
+
+    <!--  页尾  -->
+    <include file="Index:footer"/>
+</body>
+</html>

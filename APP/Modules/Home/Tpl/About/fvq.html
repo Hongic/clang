@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>常见问题</title>
+	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/public.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/main.css"/>
+
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/CSS/pro_drop_1.css"/>
+        <script type="text/javascript" src='__PUBLIC__/Js/stuHover.js'></script>
+    </head>
+    <body>
+
+        <!--   页头：导航栏       -->
+    <include file="Index:header"/>
+
+    <!--     主要内容            -->
+    <div class="main">
+	<div style="padding: 6px;line-height: 1.6em;min-height: 460px;">
+
+	    <volist name="result" id="fvq">
+		<div>
+
+		    <div style="font-size: 30px;float: left;background-color: red;padding: 6px 10px;color: #FFF;border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius:10px;">
+			F
+		    </div>
+		    <div style="font-size: 20px;vertical-align: middle;margin-left: 6px;border: 0px #00FFFF dashed;width: 930px;float: left;padding-top: 6px;">
+
+			{$fvq.title}
+
+		    </div>
+
+		</div>
+
+
+		<div style="clear: both;">
+		    <div style="font-size: 30px;float: left;background-color: #FFF;padding: 6px 10px;color: red;border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius:10px;">
+			Q
+		    </div>
+
+		    <div style="font-size: 20px;vertical-align: middle;margin-left: 6px;border: 0px #00FFFF dashed;width: 930px;float: left;padding-top: 6px;">
+			{$fvq.content}
+		    </div>
+
+		</div>
+
+		<hr style="width: 980px;margin: 6px 0px;">
+
+	    </volist>
+
+
+
+	</div>
+	<div style="text-align: center;">
+	    {$page}
+	</div>
+
+
+    </div>
+
+
+    <!--  页尾  -->
+    <include file="Index:footer"/>
+</body>
+</html>

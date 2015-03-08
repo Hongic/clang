@@ -1,0 +1,90 @@
+
+/* 
+    Created on : 2013-10-24, 15:53:00
+    Author     : Hong
+*/
+
+/*
+ * 全局背景 body
+*/
+
+
+*{
+    margin: 0 auto;
+    padding: 0px;
+
+} 
+
+/*
+ *  中间 
+ */
+.center{
+    margin: 0 auto;
+    padding: 0px;
+}
+
+
+/*
+ * 头尾背景#c1d0fa    #68cdff
+ */
+
+.hdf{
+    background-color:#c1d0fa;
+    width: 100%;
+
+}
+
+/*
+ *页头 header
+*/
+.header{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 3px;
+    height: 60px;  // 不要轻易改变
+    border: 1px #f007d3 dashed;
+    vertical-align: middle;
+
+}
+
+
+/*
+ *  页尾 footer
+*/
+.fo{
+    clear: both;
+    background-color: #68cdff;
+    width: 100%;
+}
+.foot{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 3px;
+    height: 200px;
+}
+.foote{
+    width: 190px;
+    min-height:200px;
+    float: left;
+    margin: 5px;
+    text-align: center;
+
+}
+.foote hr{
+    margin:3px 0px;
+}
+.foote a{
+    text-decoration: none;
+    line-height: 25px;
+
+}
+
+/*
+ *  分页
+ */
+.page{
+    clear: both;
+    padding:10px 0px;
+    text-align: center;
+
+}

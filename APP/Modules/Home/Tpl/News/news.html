@@ -1,0 +1,62 @@
+<!---                新闻动态                                  --->
+<div class="main">
+
+
+    <!--       左边：最新公告                       -->
+    <div class="notice">
+
+	<div class="pub_biaoti">
+	    最新公告
+	</div>
+
+	<div class="notice_content">
+	    <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollAmount="3" scrollDelay="100" direction="up" height="300">
+		{$notice}
+	    </marquee>
+	</div>
+
+
+    </div>
+
+
+    <!--       右边：新闻时间列表      id desc      -->
+    <div class="pub_content_right">
+
+	<div class="pub_biaoti">
+
+	    新闻动态
+
+	</div>
+
+
+	<div class="news">
+	    <volist name="result" id="new">
+		<div  class="news_title">
+		    <a href="__URL__/content/id/{$new.id}" title="{$new.title}">
+			{$new.title|utf8Substr=0,25}
+		    </a>
+
+		</div>
+		<div class="news_time_right">
+		    时间：{$new.time}
+		    点击量：{$new.click}
+		</div>
+
+		<div class="news_content">
+		    {$new.content|utf8Substr=0,130}
+		</div>
+	    </volist>
+
+
+	</div>
+
+	<div class="page">
+	    {$page}
+	</div>
+
+
+
+
+    </div>
+
+</div>
